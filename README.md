@@ -10,10 +10,10 @@ Simple wrapper built around Objective-C to achieve the same result.
 ###1. Create bridging header.
 - When prompted with "Would you like to configure an Objective-C bridging header?" press Yes.
 - Go to bridging header and add:
-```#import "SwiftTryCatch.h"```
+````#import "SwiftTryCatch.h"````
 
-###2. Use in code
-```
+###2. Use
+````
 SwiftTryCatch.try({ () -> Void in
         //try something
      }, catch: { (error) -> Void in
@@ -21,4 +21,4 @@ SwiftTryCatch.try({ () -> Void in
      }, finally: { () -> Void in
         //close resources
 })
-```
+````
