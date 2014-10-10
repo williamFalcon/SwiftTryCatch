@@ -15,10 +15,10 @@ Simple wrapper built around Objective-C to achieve the same result.
 ###2. Use in code
 ```
 SwiftTryCatch.try({ () -> Void in
-                        //try something
-                        }, catch: { (error) -> Void in
-                            //handle error
-                        }, finally: { () -> Void in
-                            //close resources
-                    })
+        //try something
+     }, catch: { (error) -> Void in
+        //handle error
+     }, finally: { () -> Void in
+        //close resources
+})
 ```
