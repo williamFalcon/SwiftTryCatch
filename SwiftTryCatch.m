@@ -45,4 +45,14 @@
     }
 }
 
++ (void)throwString:(NSString*)s
+{
+	@throw [NSException exceptionWithName:s reason:s userInfo:nil];
+}
+
++ (void)throwException:(NSException*)e
+{
+	@throw e;
+}
+
 @end
