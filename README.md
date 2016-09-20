@@ -11,7 +11,7 @@ Simple wrapper built around Objective-C `@try`/`@catch`/`@finally`.
 
     pod 'SwiftTryCatch'
 
-### Create bridging header
+### Create bridging header (not necessary if using use_frameworks! flag in PodFile)   
 
 - When prompted with "Would you like to configure an Obj-C bridging header?", press "Yes".
 - Go to bridging header and add:
