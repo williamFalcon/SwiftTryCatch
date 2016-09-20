@@ -20,10 +20,10 @@ Simple wrapper built around Objective-C `@try`/`@catch`/`@finally`.
 
 ### Use
 
-    SwiftTryCatch.try({
+    SwiftTryCatch.tryRun({
              // try something
-         }, catch: { (error) in
+         }, catchRun: { (error) in
              println("\(error.description)")
-         }, finally: {
+         }, finallyRun: {
              // close resources
     })
