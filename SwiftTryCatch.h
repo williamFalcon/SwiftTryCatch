@@ -27,12 +27,16 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface SwiftTryCatch : NSObject
 
 /**
  Provides try catch functionality for swift by wrapping around Objective-C
  */
-+ (void)tryRun:(void (^)())tryRun catchRun:(void (^)(NSException *))catchRun finallyRun:(void (^)())finallyRun;
++ (void)try:(__attribute__((noescape))  void(^ _Nullable)())try catch:(__attribute__((noescape)) void(^ _Nullable)(NSException*exception))catch finally:(__attribute__((noescape)) void(^ _Nullable)())finally;
 + (void)throwString:(NSString*)s;
 + (void)throwException:(NSException*)e;
 @end
+
+NS_ASSUME_NONNULL_END
