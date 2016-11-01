@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Provides try catch functionality for swift by wrapping around Objective-C
  */
-+ (void)try:(__attribute__((noescape))  void(^ _Nullable)())try catch:(__attribute__((noescape)) void(^ _Nullable)(NSException*exception))catch finally:(__attribute__((noescape)) void(^ _Nullable)())finally;
++ (void)tryRun:(__attribute__((noescape))  void(^ _Nullable)())tryRun catchRun:(__attribute__((noescape)) void(^ _Nullable)(NSException*exception))catchRun finallyRun:(__attribute__((noescape)) void(^ _Nullable)())finallyRun;
 + (void)throwString:(NSString*)s;
 + (void)throwException:(NSException*)e;
 @end
