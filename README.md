@@ -11,19 +11,22 @@ Simple wrapper built around Objective-C `@try`/`@catch`/`@finally`.
 
     pod 'SwiftTryCatch'
 
-### Create bridging header (not necessary if using use_frameworks! flag in PodFile)   
+### Import
 
-- When prompted with "Would you like to configure an Obj-C bridging header?", press "Yes".
-- Go to bridging header and add:
+If using Frameworks for pods (use_frameworks! flag in Podfile):
 
-        #import "SwiftTryCatch.h"
+    import SwiftTryCatch
+
+or import into Obj-C bridging header:
+
+    #import "SwiftTryCatch.h"
 
 ### Use
 
-    SwiftTryCatch.tryRun({
+    SwiftTryCatch.try({
              // try something
-         }, catchRun: { (error) in
-             println("\(error.description)")
-         }, finallyRun: {
+         }, catch: { (error) in
+             print("\(error.description)")
+         }, finally: {
              // close resources
     })
