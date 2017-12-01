@@ -30,3 +30,11 @@ or import into Obj-C bridging header:
          }, finally: {
              // close resources
     })
+    
+## Notes  
+It was pointed out that without -fobjc-arc-exceptions flag this will lead to memory leaks
+
+http://clang.llvm.org/docs/AutomaticReferenceCounting.html#exceptions
+
+Therefore, ARC-generated code leaks by default on exceptions, which is just fine if the process is going to be immediately terminated anyway. Programs which do care about recovering from exceptions should enable the option.    
+
