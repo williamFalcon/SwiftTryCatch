@@ -20,7 +20,10 @@ let package = Package(
         .target(
             name: "SwiftTryCatch",
             dependencies: [],
-            publicHeadersPath: "./"),
+            publicHeadersPath: "./",
+            swiftSettings: [
+                SwiftSetting.define("-fobjc-arc-exceptions")
+        ]),
         .testTarget(
             name: "SwiftTryCatchTests",
             dependencies: ["SwiftTryCatch"])
