@@ -20,7 +20,6 @@ let package = Package(
         .target(
             name: "SwiftTryCatch",
             dependencies: [],
-            path: "./",
             publicHeadersPath: "./")
     ]
 )
