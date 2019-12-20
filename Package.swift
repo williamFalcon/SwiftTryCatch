@@ -20,7 +20,10 @@ let package = Package(
         .target(
             name: "SwiftTryCatch",
             dependencies: [],
-            publicHeadersPath: "./")
+            publicHeadersPath: "./"),
+        .testTarget(
+            name: "SwiftTryCatchTests",
+            dependencies: ["SwiftTryCatch"])
     ]
 )
 let version = Version(1, 0, 0)
