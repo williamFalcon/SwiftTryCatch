@@ -9,18 +9,22 @@ Simple wrapper built around Objective-C `@try`/`@catch`/`@finally`.
 
 ### Install via Swift Package Manager
 
+```
 import PackageDescription
 
 let package = Package(
     name: "YourModule",
     dependencies: [
-        .Package(url: "https://github.com/Dean151/SwiftTryCatch.git", majorVersion: 1, minor: 1),
+        .Package(url: "https://github.com/williamFalcon/SwiftTryCatch.git"),
     ]
 )
+```
 
 ### Install via Cocoapods
 
-    pod 'SwiftTryCatch', :git => 'https://github.com/Dean151/SwiftTryCatch.git'
+```
+    pod 'SwiftTryCatch'
+```
 
 ### Import
 
