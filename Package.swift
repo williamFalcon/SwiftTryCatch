@@ -9,6 +9,6 @@ let package = Package(
         .library(name: "SwiftTryCatch", targets: ["SwiftTryCatch"]),
     ],
     targets: [
-        .target(name: "SwiftTryCatch", dependencies: [], path: "Sources", sources: ["SwiftTryCatch.m", "SwiftTryCatch.h"]),
+        .target(name: "SwiftTryCatch", dependencies: [], path: "Sources", sources: ["SwiftTryCatch.m", "include/SwiftTryCatch.h"]),
     ]
 )
