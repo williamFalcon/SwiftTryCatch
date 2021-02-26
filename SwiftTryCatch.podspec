@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { 'William Falcon' => 'waf2107@columbia.edu' }
   s.source       = { git: 'https://github.com/williamFalcon/SwiftTryCatch.git', branch: 'master' }
-  s.source_files = 'SwiftTryCatch.{h,m}'
+  s.source_files = 'src/SwiftTryCatch.{h,m}'
 end
